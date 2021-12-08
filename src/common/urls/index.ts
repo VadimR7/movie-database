@@ -1,7 +1,7 @@
 import imagePlaceHolder from '../../images/No-Image-Placeholder.png';
 import posterPlaceHolder from '../../images/No-Poster-Placeholder.png';
 
-const API_KEY = process.env.REACT_APP_MOVIEDB_KEY;
+const API_KEY = process.env.MOVIE_KEY;
 const mainUrl = 'https://api.themoviedb.org/3';
 
 export function discoverMovieUrl(pageNumber: number = 1) {
