@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  z-index: 100;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+
+  .logo-container {
+    color: #fff;
+    img {
+      max-width: 238px;
+      @media (max-width: $md4+px) {
+        max-width: 180px;
+      }
+    }
+  }
+  .search {
+    width: 140px;
+    position: relative;
+    &__input {
+      border-radius: 15px;
+      outline: none;
+      font-size: 12px;
+      height: 30px;
+      padding: 6px 30px 6px 10px;
+      width: 100%;
+      background-color: hsla(0, 0%, 100%, 0.8);
+      &:focus {
+        background-color: #fff;
+        color: #89a;
+      }
+    }
+    &__button {
+      position: absolute;
+      top: 55%;
+      right: 7px;
+      transform: translateY(-50%);
+      color: darkgrey;
+      font-size: 16px;
+    }
+  }
+}
