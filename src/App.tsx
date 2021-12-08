@@ -11,7 +11,6 @@ const Main = lazy(() => import('./components/main/Main'));
 const Search = lazy(() => import('./components/search/Search'));
 
 function App() {
-  console.log('App RENDERED');
   return (
     <Router>
       <Suspense fallback={<Loading />}>
